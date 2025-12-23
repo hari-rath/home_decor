@@ -10,14 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v4  # Corrected shorthand
+        uses: actions/checkout@v4
 
-      - name: 📂 Sync to VPS
-        uses: pressidium/sftp-deploy@v1  # Corrected shorthand
-        with:
-          host: ${{ secrets.FTP_SERVER }}
-          username: 'root'
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          local_dir: '.' 
-          remote_dir: '/home/maxfine/public_html/tharitourtravel.com/'
+      - name: 📂 Sync to VPS via SSH
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i --delete"
+          SOURCE: "/" # Everything in the repo
+          REMOTE_HOST: ${{ secrets.FTP_SERVER }} # Your VPS IP
+          REMOTE_USER: "root"
+          TARGET: "/home/maxfine/public_html/tharitourtravel.com/" # Target path
+          EXCLUDE: "/.git/, /.github/, /node_modules/"
