@@ -54,6 +54,17 @@ class Home extends BaseController
        return view('all_gallaries', ['gallaries' => $gallaries]);
 
     }
+
+     public function services()
+    {
+        $services = $this->GallariesModel->findAll();
+       // echo "<pre>";print_r($gallaries);
+        
+       return view('services', ['services' => $services]);
+
+    }
+
+
     public function category_wise_products($id = null)
     {
         // Fetch only products matching the category_id from the URL
@@ -72,18 +83,18 @@ class Home extends BaseController
     }
 
     public function product_details($id = null)
-{
-    // Fetch a single product row as an array
-    $product = $this->ProductModel->where('id', $id)->first();
+    {
+        // Fetch a single product row as an array
+        $product = $this->ProductModel->where('id', $id)->first();
 
-    if (!$product) {
-        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        if (!$product) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+
+        return view('product_details', [
+            'product' => $product,
+        ]);
     }
-
-    return view('product_details', [
-        'product' => $product,
-    ]);
-}
 
     public function add_contact() // Remove ":string" here
     {

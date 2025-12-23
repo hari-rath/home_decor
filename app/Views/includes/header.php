@@ -823,8 +823,8 @@ ul.navbar-nav.ms-auto li:first-child {
                
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url('/'); ?>">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#collections"> Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('services'); ?>">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('/'); ?>#collections"> Categories</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#bedding">Bedding</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="<?php echo base_url('all_gallaries'); ?>">Photo Gallaries</a></li>
                  

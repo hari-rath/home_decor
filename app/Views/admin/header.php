@@ -190,7 +190,7 @@
 						<li class="nav-item">
 							<a href="<?php echo base_url('admin/contact_list'); ?>">
 								<i class="la la-table"></i>
-								<p>Contact Form List..</p>
+								<p>Contact Form List</p>
 								
 							</a>
 						</li>

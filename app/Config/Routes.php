@@ -10,6 +10,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('contact', 'Home::contact');
 $routes->get('all_gallaries', 'Home::all_gallaries');
+$routes->get('services', 'Home::services');
 $routes->get('category_wise_products/(:num)', 'Home::category_wise_products/$1');
 $routes->get('product_details/(:num)', 'Home::product_details/$1');
 $routes->post('savecontact', 'Home::add_contact');

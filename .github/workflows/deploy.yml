@@ -9,16 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Get Code (Using the direct link)
       - name: 🚚 Get latest code
-        uses: https://github.com/actions/checkout@v4
+        uses: actions/checkout@v4  # Corrected shorthand
 
-      # Step 2: Deploy via SFTP (Using a more stable action)
       - name: 📂 Sync to VPS
-        uses: https://github.com/pressidium/sftp-deploy@v1
+        uses: pressidium/sftp-deploy@v1  # Corrected shorthand
         with:
           host: ${{ secrets.FTP_SERVER }}
           username: 'root'
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_dir: '.' # The folder in GitHub
-          remote_dir: '/home/maxfine/public_html/tharitourtravel.com/' # Your VPS path
+          port: 22
+          local_dir: '.' 
+          remote_dir: '/home/maxfine/public_html/tharitourtravel.com/'
