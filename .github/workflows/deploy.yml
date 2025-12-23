@@ -16,9 +16,10 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
-          SOURCE: "/" # Everything in the repo
-          REMOTE_HOST: ${{ secrets.FTP_SERVER }} # Your VPS IP
+          REMOTE_HOST: ${{ secrets.FTP_SERVER }}
           REMOTE_USER: "root"
-          TARGET: "/home/maxfine/public_html/tharitourtravel.com/" # Target path
+          REMOTE_PORT: "7576" # <--- CHANGE THIS if your VPS uses a different port
+          TARGET: "/home/maxfine/public_html/tharitourtravel.com/"
+          SOURCE: "/"
+          ARGS: "-rlgoDzvc -i --delete"
           EXCLUDE: "/.git/, /.github/, /node_modules/"
