@@ -1,0 +1,51 @@
+CRITICAL - 2025-12-21 06:33:29 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 06:49:03 --> ErrorException: Undefined array key "product_desc"
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 184.
+ 1 APPPATH\Views\home.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_desc"', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\home.php', 184)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 06:52:30 --> ErrorException: Undefined variable $latestSecondProduct
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 196.
+ 1 APPPATH\Views\home.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latestSecondProduct', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\home.php', 196)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-21 06:53:04 --> ErrorException: Undefined variable $latestSecondProduct
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 196.
+ 1 APPPATH\Views\home.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $latestSecondProduct', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\home.php', 196)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(31): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

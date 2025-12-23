@@ -1,0 +1,160 @@
+CRITICAL - 2025-12-22 02:16:06 --> Error: Class "App\Models\Admin\GallariesModel" not found
+[Method: GET, Route: admin/gallaries]
+in APPPATH\Controllers\Admin\Gallaries.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Gallaries->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 02:16:32 --> Error: Class "App\Models\Admin\GallariesModel" not found
+[Method: GET, Route: admin/gallaries]
+in APPPATH\Controllers\Admin\Gallaries.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin\Gallaries->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 02:37:20 --> ErrorException: Undefined variable $actionUrl
+[Method: GET, Route: admin/gallaries]
+in APPPATH\Views\admin\gallaries.php on line 18.
+ 1 APPPATH\Views\admin\gallaries.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $actionUrl', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/gallaries', [], true)
+ 5 APPPATH\Controllers\Admin\Gallaries.php(22): view('admin/gallaries', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Gallaries->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gallaries))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 02:37:37 --> ErrorException: Undefined variable $actionUrl
+[Method: GET, Route: admin/gallaries]
+in APPPATH\Views\admin\gallaries.php on line 18.
+ 1 APPPATH\Views\admin\gallaries.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $actionUrl', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/gallaries', [], true)
+ 5 APPPATH\Controllers\Admin\Gallaries.php(22): view('admin/gallaries', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Gallaries->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gallaries))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 02:39:42 --> ErrorException: Undefined variable $actionUrl
+[Method: GET, Route: admin/gallaries]
+in APPPATH\Views\admin\gallaries.php on line 10.
+ 1 APPPATH\Views\admin\gallaries.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $actionUrl', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/gallaries', [], true)
+ 5 APPPATH\Controllers\Admin\Gallaries.php(22): view('admin/gallaries', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Gallaries->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gallaries))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 02:40:58 --> ErrorException: Undefined array key "gallaries"
+[Method: GET, Route: admin/gallaries]
+in APPPATH\Views\admin\gallaries.php on line 79.
+ 1 APPPATH\Views\admin\gallaries.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gallaries"', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php', 79)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\admin\\gallaries.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('admin/gallaries', [], true)
+ 5 APPPATH\Controllers\Admin\Gallaries.php(22): view('admin/gallaries', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Gallaries->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gallaries))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 02:43:44 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: POST, Route: admin/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 04:55:23 --> ErrorException: Undefined variable $gallaries
+[Method: GET, Route: all_gallaries]
+in APPPATH\Views\all_gallaries.php on line 126.
+ 1 APPPATH\Views\all_gallaries.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gallaries', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\all_gallaries.php', 126)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\all_gallaries.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('all_gallaries', [], true)
+ 5 APPPATH\Controllers\Home.php(54): view('all_gallaries', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->all_gallaries()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 05:34:25 --> ErrorException: Undefined array key "gallary_image"
+[Method: GET, Route: category_wise_products/1]
+in APPPATH\Views\category_wise_products.php on line 92.
+ 1 APPPATH\Views\category_wise_products.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gallary_image"', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\category_wise_products.php', 92)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\category_wise_products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('category_wise_products', [], true)
+ 5 APPPATH\Controllers\Home.php(65): view('category_wise_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->category_wise_products('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 05:36:12 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "["1766285899_d1a0f3fbc90e164bb711.jpg","1766285899_8ec521fcbc28e93e41e2.png"]"
+[Method: GET, Route: uploads/products/gallary_images/%5B%221766285899_d1a0f3fbc90e164bb711.jpg%22,%221766285899_8ec521fcbc28e93e41e2.png%22%5D]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('uploads/products/gallary_images/["1766285899_d1a0f3fbc90e164bb711.jpg","1766285899_8ec521fcbc28e93e41e2.png"]')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('uploads/products/gallary_images/["1766285899_d1a0f3fbc90e164bb711.jpg","1766285899_8ec521fcbc28e93e41e2.png"]')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 05:36:12 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "["1766238892_1b12b814dd23bdd154bc.jpg","1766238892_9fda040904596e101ae3.jpg","1766238892_9df356e27482b43907ab.jpg","1766285789_4aa429742d68756b1ad1.jpg"]"
+[Method: GET, Route: uploads/products/gallary_images/%5B%221766238892_1b12b814dd23bdd154bc.jpg%22,%221766238892_9fda040904596e101ae3.jpg%22,%221766238892_9df356e27482b43907ab.jpg%22,%221766285789_4aa429742d68756b1ad1.jpg%22%5D]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('uploads/products/gallary_images/["1766238892_1b12b814dd23bdd154bc.jpg","1766238892_9fda040904596e101ae3.jpg","1766238892_9df356e27482b43907ab.jpg","1766285789_4aa429742d68756b1ad1.jpg"]')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('uploads/products/gallary_images/["1766238892_1b12b814dd23bdd154bc.jpg","1766238892_9fda040904596e101ae3.jpg","1766238892_9df356e27482b43907ab.jpg","1766285789_4aa429742d68756b1ad1.jpg"]')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 06:37:58 --> ErrorException: Undefined array key "primary_image"
+[Method: GET, Route: product_details/5]
+in APPPATH\Views\product_details.php on line 129.
+ 1 APPPATH\Views\product_details.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "primary_image"', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\product_details.php', 129)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\product_details.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('product_details', [], true)
+ 5 APPPATH\Controllers\Home.php(86): view('product_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->product_details('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-12-22 11:27:46 --> ErrorException: Undefined array key "external_link"
+[Method: GET, Route: category_wise_products/1]
+in APPPATH\Views\category_wise_products.php on line 112.
+ 1 APPPATH\Views\category_wise_products.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "external_link"', 'D:\\xampp2\\htdocs\\home_decor\\app\\Views\\category_wise_products.php', 112)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp2\\htdocs\\home_decor\\app\\Views\\category_wise_products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('category_wise_products', [], true)
+ 5 APPPATH\Controllers\Home.php(68): view('category_wise_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->category_wise_products('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(60): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
