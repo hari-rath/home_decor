@@ -83,7 +83,7 @@
                                        class="form-control"
                                        value="<?= $isEdit ? esc($product['amazon_links']) : '' ?>"
                                        placeholder="Amazon Links"
-                                       required>
+                                       >
                             </div>
                             <div class="form-group">
                                 <label>Flip Kart Links</label>
@@ -92,7 +92,7 @@
                                        class="form-control"
                                        value="<?= $isEdit ? esc($product['flipkart_links']) : '' ?>"
                                        placeholder="Flip Kart Links"
-                                       required>
+                                       >
                             </div>
 
                              <!-- Product Title -->
