@@ -15,7 +15,7 @@ jobs:
       - name: 📂 Sync to VPS via SSH
         uses: easingthemes/ssh-deploy@main
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_PASSWORD: ${{ secrets.REMOTE_PASSWORD }}
           REMOTE_HOST: ${{ secrets.FTP_SERVER }}
           REMOTE_USER: "root"
           REMOTE_PORT: "7576" # <--- CHANGE THIS if your VPS uses a different port
