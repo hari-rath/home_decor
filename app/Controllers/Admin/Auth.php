@@ -35,7 +35,7 @@ class Auth extends BaseController
 
 
         if ($this->session->get('isLoggedIn')) {
-            return redirect()->to(base_url('contact_list'));
+            return redirect()->to(base_url('admin/contact_list'));
         }
         return view('admin/auth/login');
     }
