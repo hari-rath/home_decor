@@ -59,13 +59,19 @@
 
     .product-caption {
         padding: 15px;
-        text-align: left;
     }
     .product-caption h6 {
         font-family: 'Playfair Display', serif;
         font-weight: 700;
         color: #002147;
         margin: 0;
+    }
+
+    .market-links {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
     
 </style>
@@ -95,7 +101,6 @@
                              class="thumb-img" onclick="openFullImg(this.src, '<?= addslashes(esc($row['product_name'])); ?>')">
 
                         <?php 
-                        // Decode the JSON string from your database
                         $gallery = json_decode($row['gallery_images'], true); 
                         if(!empty($gallery)): 
                             foreach($gallery as $imgName): 
@@ -106,17 +111,25 @@
                         <?php endforeach; endif; ?>
                     </div>
 
-                    <div class="product-caption text-left">
-                        <h6><?= esc($row['product_name']); ?></h6>
-                        <small class="text-muted float-end"><?= esc($row['product_title']); ?></small>
+                    <div class="product-caption">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="mb-0"><?= esc($row['product_name']); ?></h6>
+                            <small class="text-muted"><?= esc($row['product_title']); ?></small>
+                        </div>
 
-                        <?php if($row['amazon_links']!='' && !empty($row['amazon_links'])) { ?>
-                        <a target="_blank" href="<?php echo  $row['amazon_links'] ?>" class=""><img src="<?php echo base_url('assets/images/amazon.png'); ?>" style="height:31px"></a>
-                           <?php  } ?>
-                           <?php if($row['flipkart_links']!='' && !empty($row['flipkart_links'])) { ?>
-                        <a target="_blank" href="<?php echo  $row['flipkart_links'] ?>" class=""><img src="<?php echo base_url('assets/images/flipkart.png'); ?>" style="height:40px"></a>
-                           <?php  } ?>
+                        <div class="market-links">
+                            <?php if(!empty($row['amazon_links'])) { ?>
+                                <a target="_blank" href="<?= $row['amazon_links'] ?>">
+                                    <img src="<?= base_url('assets/images/amazon.png'); ?>" style="height:25px">
+                                </a>
+                            <?php } ?>
 
+                            <?php if(!empty($row['flipkart_links'])) { ?>
+                                <a target="_blank" href="<?= $row['flipkart_links'] ?>">
+                                    <img src="<?= base_url('assets/images/flipkart.png'); ?>" style="height:32px">
+                                </a>
+                            <?php } ?>
+                        </div>
                     </div>
                 </div>
             </div>

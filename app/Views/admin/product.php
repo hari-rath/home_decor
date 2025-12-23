@@ -93,7 +93,7 @@
                                        value="<?= $isEdit ? esc($product['flipkart_links']) : '' ?>"
                                        placeholder="Flip Kart Links"
                                        >
-                            </div>
+                            </div> 
 
                              <!-- Product Title -->
                             <div class="form-group">
